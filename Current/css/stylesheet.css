@@ -1,0 +1,61 @@
+body {
+    background-color: #333;
+}
+.main {
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: ;
+    font-style: normal;
+    font-weight: 300;
+
+}
+#h1 {
+    color: rgba(236, 240, 241,1.0);
+    align-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    -webkit-filter: blur(10px);
+    transition: 2s;
+}
+#h1.noBlur {
+    -webkit-filter: blur(0px);
+}
+.main p {
+    color: rgba(236, 240, 241,1.0);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+.main ul {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    list-style-type: none;
+    box-sizing: border-box;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main li {
+    display: inline;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.main li a {
+    color: rgba(236, 240, 241,1.0);
+}
+.main li i {
+    font-size: 1.3em;
+    line-height: 2em;    
+}
+.main li i:hover {
+    color: aqua;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
