@@ -4,6 +4,7 @@
 <meta charset = "utf-8">
 <meta name = "description" content = "I'm Francis Baker. I like to develop websites.">
 <meta name = "viewport" content = "initial-scale=1, width=device-width">
+<meta name="google-site-verification" content="" />
 <title>Francis Baker - Home</title>
 
 <link rel="icon" href="favicon-code.ico" type="image/x-icon"/>
@@ -12,9 +13,12 @@
 
 <!-- StyleSheets -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css" />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="css/stylesheet.css">
 <link rel="stylesheet" href="css/typeface.css">
 </head>
+
 <body id="fb">
 <div id="outside" class="lefthalf black">
     <div class="homeLayout">
@@ -25,22 +29,23 @@
        </div>
         <div class="homeRow intro">
         <div>
-            <h1>Hi there!</h1>
-            <h2>I&rsquo;m Francis. I love to develop websites in my freetime. Currently learning and focusing on Front End Web Development, and Internet Security. <br>
+            <h1 id="changeText">Hi there!</h1>
+            <h2 class="element">I&rsquo;m Francis. I love to develop websites in my freetime. Currently learning and focusing on Front End Web Development, and Internet Security. <br>
             </h2>
             
-            <div class="project">
-                <!--<h2>Current Projects</h2>-->
+            <div class="hidden"> <!--  -->
+                <h3>Current Projects</h3>
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="//HowStrongIsMy.PW">HowStrongIsMy.PW</a> <span class="hid">- This fully responsive website I designed to test the strength of passwords, this uses common algorithm that checks the password and common combos against it.</span></li>
+                    <li><a href="//XMPP.in">XMPP.in</a> <span class="hid">- This a full responsive website dedicated to my privately hosted XMPP/Jabber service I run.</span></li>
                     <li><a href=""></a></li>
                 </ul>
             </div>
             <div class="links">
-            <a target="_blank" href="//linkedin.com/in/francispbaker" class="linkedin"><i class="chrisicon fa fa-linkedin"></i></a>
-            <a target="_blank" href="//Github.com/Baker" class="github"><i class="chrisicon fa fa-github"></i></a>
-            <a target="_blank" href="//Keybase.io/Baker" class="key"><i class="chrisicon fa fa-key"></i></a>
+            <a target="_blank" href="//linkedin.com/in/francispbaker" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="//Github.com/Baker" class="github"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="//Keybase.io/Baker" class="key"><i class="fa fa-key"></i></a>
+            <a target="_blank" href="//Behance.net/Baker" class="behance"><i class="fa fa-behance"></i></a>
             </div>
         </div>
         </div>
@@ -57,4 +62,17 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    var text = ["Hi there!", "Hello!", "Hola!", "Ciào!", "Salut!"];
+    var counter = 0;
+    var elem = document.getElementById("changeText");
+    setInterval(change, 2100);
+    function change() {
+     elem.innerHTML = text[counter];
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+    }
+    </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </html>
