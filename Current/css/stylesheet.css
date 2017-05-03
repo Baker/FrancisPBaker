@@ -73,7 +73,7 @@ body {
 }
 
 .black {
-    background: #1f1f1f;
+    background: #23272A;
     color: #DDD
 }
 
@@ -347,12 +347,16 @@ h2 {
     animation: 4s linksinb
 }
 .links .key {
-    -webkit-animation: 4.1s linksinb;
-    animation: 4.1s linksinb
-}
-.links .behance {
     -webkit-animation: 4s linksinc;
     animation: 4s linksinc
+}
+.links .behance {
+    -webkit-animation: 4s linksind;
+    animation: 4s linksind
+}
+.links .twitter {
+    -webkit-animation: 4s linksine;
+    animation: 4s linksine
 }
 
 .links .portfolio:hover {
@@ -372,6 +376,9 @@ h2 {
 
 .links .behance:hover {
     color: #3b5998
+}
+.links .twitter:hover {
+    color: #1a8bf0
 }
 
 .mail {
